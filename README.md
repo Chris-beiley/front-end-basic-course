@@ -1,1 +1,3 @@
-# front-end-basic-course
+# Front End Basic course
+
+front-end-basic-course
