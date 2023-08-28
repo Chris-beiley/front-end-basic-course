@@ -1,0 +1,68 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: calc(1110px + 2rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+}
+.wrapper {
+  background-color: #e6e6e6;
+}
+.clearfix {
+  overflow: auto;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  background-color: #fc8f8f;
+  color: white;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 200px;
+}
+
+.card.small {
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  line-height: 100px;
+}
+
+.card.second {
+  position: relative;
+  right: 400px;
+}
+.card.third {
+  position: relative;
+  right: 80px;
+}
+.card.fourth {
+  position: absolute;
+  right: 5px;
+}
+.card.fifth {
+  position: relative;
+  left: 330px;
+}
+
+.ml {
+  margin-left: 1rem;
+}
+.mr {
+  margin-right: 1rem;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
