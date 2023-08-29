@@ -1,0 +1,46 @@
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+table,
+td,
+th {
+  font-size: 2rem;
+  border-collapse: collapse;
+  border: 1px solid;
+}
+
+td,
+th {
+  padding: 0.25rem 0.5rem;
+  border-color: white;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+table {
+  display: inline-block;
+  margin: 0.2rem;
+  max-width: 100%;
+  position: relative;
+}
+
+caption {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 23px;
+}
+
+.month {
+  margin-top: 30px;
+}
+
+h2 {
+  margin-bottom: -5px;
+}
