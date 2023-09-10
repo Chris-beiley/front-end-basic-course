@@ -14,14 +14,14 @@
   position: relative;
 }
 
-img {
+.image {
   max-width: 100%;
   display: block;
   border-radius: 0.5rem;
 }
 
 html {
-  font-family: "Pacifico", regular;
+  font-family: "Pacifico", sans-serif;
   font-size: 18px;
   line-height: 1.7;
   font-weight: 400;
@@ -29,18 +29,14 @@ html {
   text-align: center;
 }
 
-h1 {
+.header {
   color: #303030;
   font-weight: 700;
   margin-bottom: 30px;
 }
 
-h2 {
-  color: #303030;
-  font-weight: 700;
-}
-
-h3 {
+.name,
+.occupation {
   color: #303030;
   font-weight: 700;
 }
@@ -54,7 +50,7 @@ h3 {
 }
 
 .bottom {
-  text-align: right;
   color: blue;
   margin-top: 10px;
+  float: right;
 }
