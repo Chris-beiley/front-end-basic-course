@@ -10,12 +10,10 @@
   background-color: #eeeff1;
   padding-top: 80px;
   padding-bottom: 80px;
-  padding-left: 200px;
   line-height: 27px;
 }
 
 .navigation {
-  max-width: 646px;
   text-transform: uppercase;
 }
 
@@ -23,6 +21,12 @@
   color: #34547a;
   text-decoration: none;
   margin-right: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .nav-link {
@@ -41,7 +45,9 @@
 
 .main-title {
   line-height: 79px;
-  max-width: 540px;
+  max-width: 1100px;
+  margin-bottom: 60px;
+  font-size: 48px;
 }
 
 .main-description {
@@ -93,11 +99,13 @@
 }
 
 .project {
-  margin-left: 80px;
-  margin-right: 10px;
   display: inline-block;
-  max-width: 150px;
-  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.project + .project {
+  padding-left: 45px;
 }
 
 .project-wrap {
@@ -106,17 +114,17 @@
 
 .number {
   font-size: 21px;
-  line-height: 24.61px;
+  line-height: 25px;
 }
 
 .images {
-  margin-right: 5px;
+  margin-right: 20px;
 }
 
 /* ---------------------------------------------------------------------- */
 
 .video {
-  width: 930px;
+  width: 100%;
   height: 523px;
 }
 
@@ -131,7 +139,4 @@
   background-color: #34547a;
   padding: 50px;
   color: white;
-}
-.footer-copy {
-  margin-left: 250px;
 }
