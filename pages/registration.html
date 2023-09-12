@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="fonts" href="./fonts/fonts.css">
-    <title>Log in page</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="fonts" href="../fonts/fonts.css">
+    <title>Regestration</title>
 </head>
 
 <body class="bg">
@@ -14,39 +14,33 @@
         <header class="buttons">
             <nav>
                 <div class="nav-button">
-                    <button class="green">Log in</button>
-                    <button class="blind">Sign up</button>
+                    <button class="blind-second">Log in</button>
+                    <button class="green-second">Sign up</button>
                 </div>
             </nav>
         </header>
         <main>
             <section class="autorization">
-                <h2 class="header">Log in</h2>
+                <h2 class="header">Sign up</h2>
                 <div class="data">
                     <form action="https://fom.in.ua/echo" method="post">
                         <input id="E-mail" type="email" name="email" placeholder="Enter E-mail">
                         <input id="password" type="password" name="password" placeholder="Password">
+                        <input id="password-repeat" type="password" name="password" placeholder="Repeat password">
                         <p class="additional">
                             <label class="label">
                                 <input type="checkbox" name="save" id="checkbox">
                                 <span class="checkbox"></span>
-                                <span class="description">Remember me</span>
+                                <span class="newsletters">Newsletters</span>
                             </label>
-                            <a href="#" class="link">Forgot password?</a>
                         </p>
-                        <button type="submit" class="button">Log in</button>
+                        <button type="submit" class="button">Sign up</button>
                     </form>
                     <div class="extra">
                         <p class="additional-links">
-                            <a href="#" class="forget"> Haven't an account yet?</a>
-                            <a href="./pages/registration.html" class="registrate">Sing up now</a>
+                            <a href="#" class="forget"> Have an account</a>
+                            <a href="../index.html" class="registrate">Log in now</a>
                         </p>
-                    </div>
-                    <div class="footer">
-                        <footer>
-                            <p class="socials-header">Or going throught</p>
-                            <img src="./gallery/социалки.png" alt="Socials" class="socials">
-                        </footer>
                     </div>
                 </div>
             </section>
@@ -54,6 +48,5 @@
         </main>
     </div>
 </body>
-
 
 </html>

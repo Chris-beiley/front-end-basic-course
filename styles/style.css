@@ -1,0 +1,218 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.bg {
+  background-image: url("../gallery/david-marcu-78A265wPiO4-unsplash\ 1.png");
+  background-color: rgba(22, 21, 21, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.bg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 21, 21, 0.5);
+}
+
+.container {
+  background: rgba(233, 233, 233, 0.25);
+  backdrop-filter: blur(5px);
+  width: 496px;
+  height: 760px;
+  float: right;
+  min-height: 100vh;
+}
+
+.nav-button {
+  margin-top: 60px;
+  height: 36px;
+  font: inherit;
+}
+
+.nav-button,
+.button {
+  border-radius: 30px;
+  border: 1px solid #153416;
+  width: 340px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.green {
+  background-color: #153416;
+  color: #fff;
+  width: 168px;
+  line-height: 30px;
+  border-radius: 30px;
+  float: left;
+  margin-top: 0.5px;
+  margin-left: 1px;
+  border: 2px solid #153416;
+  font-size: 12px;
+}
+
+.blind {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  line-height: 32px;
+  border: 2px solid transparent;
+  font-size: 12px;
+}
+
+/* ----------------------------------------------- */
+
+.header {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  margin-top: 75px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.data {
+  text-align: center;
+}
+
+::placeholder {
+  color: #fff;
+  font: inherit;
+}
+
+#E-mail,
+#password,
+#password-repeat {
+  width: 340px;
+  line-height: 44px;
+  border-radius: 30px;
+  background: #929191;
+  border: none;
+  padding: 0 20px;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+#E-mail + #password {
+  margin-top: 15px;
+}
+
+#password + #password-repeat {
+  margin-top: 15px;
+}
+
+.additional {
+  margin-top: 21px;
+  font-size: 12px;
+}
+
+.label {
+  position: relative;
+}
+
+#checkbox {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+#checkbox:checked + .checkbox {
+  background: #153416 url("../gallery/Vector\ 3.png") no-repeat center/cover;
+}
+
+.checkbox {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.description {
+  color: #fff;
+  margin-right: 127px;
+  margin-left: 5px;
+}
+
+.link,
+.forget,
+.socials-header {
+  color: #153416;
+}
+
+.button {
+  margin-top: 45px;
+  background-color: #153416;
+  color: #fff;
+  height: 44px;
+  font-size: 12px;
+}
+
+/* -------------------------------------------------------------- */
+
+.extra {
+  margin-top: 40px;
+  font-size: 12px;
+}
+
+.forget {
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.registrate {
+  color: #fff;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.socials-header {
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.green-second {
+  background-color: #153416;
+  color: #fff;
+  width: 168px;
+  line-height: 30px;
+  border-radius: 30px;
+  float: right;
+  margin-top: 0.5px;
+  margin-left: 1px;
+  border: 2px solid #153416;
+  font-size: 12px;
+}
+
+.blind-second {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  line-height: 32px;
+  border: 2px solid transparent;
+  font-size: 12px;
+}
+
+.newsletters {
+  color: #fff;
+  margin-right: 250px;
+  margin-left: 5px;
+}
