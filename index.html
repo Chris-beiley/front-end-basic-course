@@ -4,33 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson_3</title>
+    <link rel="stylesheet" href="./styles/slyle.css">
+    <title>Menu</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="./pages/gallery.html">Here Gallery</a>
-        </nav>
-    </header>
     <main>
-        <section>
-            <h2>Git commands</h2>
-            <p>
-                git clone<br>
-                git push<br>
-                git checkout<br>
-                git checkout -b update<br>
-                git log<br>
-                git add<br>
-                git commit<br>
-                git commit -m<br>
-                git status<br>
-                git push origin HEAD<br>
-            </p>
-        </section>
+        <nav>
+            <ul class="nav-menu">
+                <li class="parent">Home</li>
+                <li class="parent">Products +
+                    <ul class="first-menu">
+                        <li class="first-child">Product 1<span class="plus">+</span></li>
+                        <li class="first-child">Product 2<span class="plus">+</span>
+                            <ul class="second-menu">
+                                <li class="second-child">Sub Item</li>
+                                <li class="second-child">Sub Item</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="parent">About</li>
+                <li class="parent">Contact</li>
+            </ul>
+
+        </nav>
+
     </main>
-    <footer>Have a nice day</footer>
+
 
 </body>
 
