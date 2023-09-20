@@ -1,24 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="fonts" href="./fonts/fonts.css">
-    <title>Amelia flowers</title>
+    <title>Skinn</title>
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <nav class="navigation">
-                <a href="#" class="logo">Amelia F</a>
-                <a href="#" class="nav-link">Главная</a>
-                <a href="#" class="nav-link">О нас</a>
-                <a href="#" class="nav-link">Как мы работаем</a>
-                <a href="#" class="nav-link">Наши работы</a>
-                <a href="#" class="nav-link">Контакты</a>
+            <nav class="navbar">
+                <div class="logo-place">
+                    <a href="#"> <img src="./gallery/logo.png" alt="logo" class="logo"></a>
+                </div>
+                <div class="navigation-links">
+                    <a href="#" class="nav-links">Shop All</a>
+                    <a href="#" class="nav-links">Our Story</a>
+                    <a href="#" class="nav-links">Blog</a>
+                    <a href="#" class="nav-links">Pages</a>
+                </div>
+                <div class="cart-qty">
+                    <label class="cart">Cart</label>
+                    <input class="form-control" type="number" value="0" min="0">
+                </div>
             </nav>
         </div>
     </header>
@@ -26,110 +33,209 @@
         <section>
             <div class="first-section">
                 <div class="container">
-                    <article class="card">
-                        <div class="card-wraper">
-                            <h2 class="heading">Amelia Flowers</h2>
-                            <p class="card-title">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-                                вэб-дизайне.
-                                Lorem Ipsum
-                                является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                            <button class="btn-green">Заказать букет</button>
-                            <button class="btn-blind">Помощь флориста</button>
+                    <article class="first-card">
+                        <img src="./gallery/section1.jpg" alt="first-img" class="firts-img">
+                        <div class="content-wrapper">
+                            <div class="main-title">
+                                <p class="title">Discover The</p>
+                                <p class="title">Beauty Within</p>
+                            </div>
+                            <p class="frst-highlited">You</p>
+                            <button class="btn">View collection</button>
                         </div>
-                        <img src="./gallery/Rectangle82.jpg" alt="image1" class="first-img">
-                    </article>
-                    <div class="simple-text">
-                        <h3 class="title">О НАС</h3>
-                        <p class="txt">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-                            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
-                            века.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="central-line">
-                <div class="container">
-                    <article class="layer">
-                        <img src="./gallery/Layer1.png" alt="layer1" class="layer-img">
-                        <p class="layer-txt">Лучшие цены</p>
-                    </article>
-                    <article class="layer">
-                        <img src="./gallery/Layer2.png" alt="layer2" class="layer-img">
-                        <p class="layer-txt">Индивидуальный подбор</p>
-                    </article>
-                    <article class="layer">
-                        <img src="./gallery/Layer3.png" alt="layer3" class="layer-img">
-                        <p class="layer-txt">Быстрая доставка</p>
-                    </article>
-                    <article class="layer">
-                        <img src="./gallery/Layer4.png" alt="layer4" class="layer-img">
-                        <p class="layer-txt">Всегда свежие цветы</p>
-                    </article>
-                    <article class="layer">
-                        <img src="./gallery/Layer5.png" alt="layer5" class="layer-img">
-                        <p class="layer-txt">Бонусная система</p>
                     </article>
                 </div>
             </div>
             <div class="second-section">
                 <div class="container">
-                    <article class="card">
-                        <img src="./gallery/glass-vase-with-flowers-in-the-interior-of-the-room.jpg" alt="image2"
-                            class="img2">
-                        <div class="card-wraper">
-                            <h3 class="title">Как мы работаем</h3>
-                            <p class="txt">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-                                вэб-дизайне.
-                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+
+                    <div class="txt-wrapper">
+                        <p class="scnd-title">Natural and</p>
+                        <p class="scnd-title">certified organic</p>
+                        <p class="scnd-highlited">Skincare</p>
+                        <div class="txt-wrap">
+                            <p class="txt">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+                                excepturi.
+                            </p>
+                        </div>
+                        <button class="btn-radius">Shop all</button>
+                    </div>
+                    <img src="./gallery/skincare1.jpg" alt="skincare" class="skincare-one">
+                    <img src="./gallery/skincare2.jpg" alt="skincare" class="skincare-two">
+                    <img src="./gallery/skincare3.jpg" alt="skincare" class="skincare-three">
+                    <img src="./gallery/skincare4.jpg" alt="skincare" class="skincare-four">
+                    <img src="./gallery/skincare5.jpg" alt="skincare" class="skincare-five">
+                </div>
+            </div>
+            <div class="third-section">
+                <div class="container">
+                    <img src="./gallery/section2.jpg" alt="second-img" class="second-img">
+                </div>
+            </div>
+            <div class="forth-section">
+                <div class="container">
+                    <p class="third-highlited">Products</p>
+                    <p class="third-title">Healthy skin, wildly you</p>
+                    <div class="card-article">
+                        <article class="card bg-hex">
+                            <img src="./gallery/sample1.jpg" alt="sample" class="sample-img">
+                            <div class="discription-wrapper">
+                                <div class="alighn">
+                                    <p class="name">Cleanser</p>
+                                    <p class="price">$ 56.00 USD</p>
+                                </div>
+                                <p class="discription">Anti Acne Face Wash</p>
+                            </div>
+                            <button class="prod-btn">Shop now</button>
+                        </article>
+                        <article class="card bg-hex">
+                            <img src="./gallery/sample2.jpg" alt="sample" class="sample-img">
+                            <div class="discription-wrapper">
+                                <div class="alighn">
+                                    <p class="name">Serums</p>
+                                    <p class="price">$ 34.00 USD</p>
+                                </div>
+                                <p class="discription">Vitamin C Hand & Nail Cream</p>
+                            </div>
+                            <button class="prod-btn">Shop now</button>
+                        </article>
+                        <article class="card bg-hex">
+                            <img src="./gallery/sample3.jpg" alt="sample" class="sample-img">
+                            <div class="discription-wrapper">
+                                <div class="alighn">
+                                    <p class="name">Body Wash</p>
+                                    <p class="price">$ 67.00 USD</p>
+                                </div>
+                                <p class="discription">Vitamin C Clay Face Mask</p>
+                            </div>
+                            <button class="prod-btn">Shop now</button>
+                        </article>
+                        <article class="card bg-hex">
+                            <img src="./gallery/sample4.jpg" alt="sample" class="sample-img">
+                            <div class="discription-wrapper">
+                                <div class="alighn">
+                                    <p class="name">Night Cream</p>
+                                    <p class="price">$ 89.00 USD</p>
+                                </div>
+                                <p class="discription">10 In 1 Active Miracle</p>
+                            </div>
+                            <button class="prod-btn">Shop now</button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="fifth-section">
+                <div class="container">
+                    <article class="section">
+                        <img src="./gallery/section3.jpg" alt="third-image">
+                        <div class="section-wrapper">
+                            <p class="third-highlited">Feature</p>
+                            <p class="forth-title">Innovation-led </p>
+                            <p class="forth-title">Products</p>
+                            <p class="txt-second">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                                necessitatibus saepe eveniet ut et voluptates repudiandae sint.</p>
+                            <button class="btn-second">Read more</button>
                         </div>
                     </article>
-                    <div class="container">
-                        <h3 class="title">Наши работы</h3>
-                        <div class="sample-cards">
-                            <article class="sample">
-                                <img src="./gallery/Rectangle1.jpg" alt="sample1" class="sample-img">
-                                <p class="sample-txt">Букет” Флоренция”</p>
-                            </article>
-                            <article class="sample">
-                                <img src="./gallery/Rectangle2.jpg" alt="sample2" class="sample-img">
-                                <p class="sample-txt">Букет” Флоренция”</p>
-                            </article>
-                            <article class="sample">
-                                <img src="./gallery/Rectangle3.jpg" alt="sample3" class="sample-img">
-                                <p class="sample-txt">Букет” Флоренция”</p>
-                            </article>
-                        </div>
+
+                </div>
+            </div>
+            <div class="six-section">
+                <div class="container">
+                    <p class="txt-third">"Generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is
+                        therefore always free from repetition, injected humour, or non-characteristic"</p>
+                    <div class="brand-wrapper">
+                        <img src="./gallery/brand1.png" alt="brand" class="brand">
+                        <img src="./gallery/brand2.png" alt="brand" class="brand">
+                        <img src="./gallery/brand3.png" alt="brand" class="brand">
+                        <img src="./gallery/brand4.png" alt="brand" class="brand">
+                    </div>
+                </div>
+            </div>
+            <div class="seven-section">
+
+                <img src="./gallery/face1.jpg" alt="face" class="face">
+                <img src="./gallery/face2.jpg" alt="face" class="face">
+                <img src="./gallery/face3.jpg" alt="face" class="face">
+
+            </div>
+            <div class="blog">
+                <div class="container">
+                    <p class="heading">Skinn blog</p>
+                    <div class="blog-section">
+                        <article class="blog-card">
+                            <img src="./gallery/lastsection1.jpg" alt="blog" class="blog-img">
+                            <div class="blog-wrapper">
+                                <p class="blog-dscrp">Which skinceuticals vitamin c serum is right for you</p>
+                                <button class="blog-button">Read more</button>
+                            </div>
+                        </article>
+                        <article class="blog-card">
+                            <img src="./gallery/lastsection2.jpg" alt="blog" class="blog-img">
+                            <div class="blog-wrapper">
+                                <p class="blog-dscrp">Everything you need to know about your skin</p>
+                                <button class="blog-button">Read more</button>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="third-section">
-                <div class="contacts">
-                    <h4 class="footer-heading">Контакты</h4>
-                    <ul class="data">
-                        <li class="etc">+380517328964</li>
-                        <li class="etc">+380517328964</li>
-                        <li class="etc">Харьков, ул Сумская 115</li>
-                    </ul>
+        <div class="container bg-hex">
+            <div class="footer-content">
+                <div class="footer-description">
+                    <a href="#"> <img src="./gallery/logo.png" alt="logo" class="logo"></a>
+                    <p class="footer-dscr">The wise man therefore always holds in these matters to this principle</p>
+                    <p class="with-link">Designed by<a href="#" class="link">Webestica</a></p>
+                    <p class="with-link">Powered by<a href="#" class="link">Webflow</a></p>
                 </div>
-                <div class="copy">
-                    <h3 class="logo-copy">Amelia F</h3>
-                    <p class="copy-date">© 2023</p>
+                <div class="pages">
+                    <p class="footer-head">Pages</p>
+                    <nav class="all-pages">
+                        <a href="#" class="page-link">Home</a>
+                        <a href="#" class="page-link">Home 2</a>
+                        <a href="#" class="page-link">Shop All</a>
+                        <a href="#" class="page-link">Our Story</a>
+                        <a href="#" class="page-link">Blog</a>
+                        <a href="#" class="page-link">FAQs</a>
+                        <a href="#" class="page-link">Contact Us</a>
+                        <a href="#" class="page-link">Instructions</a>
+                        <a href="#" class="page-link">Style Guide</a>
+                        <a href="#" class="page-link">Licenses</a>
+                        <a href="#" class="page-link">Changelog</a>
+                    </nav>
+                </div>
+                <div class="contact">
+                    <p class="footer-head">Contact us</p>
+                    <div class="contact-us">
+                        <p class="qstns">Have questions or suggestions?
+                            <a href="mailto:hello@webestica.com" class="link">hello@webestica.com</a>
+                        </p>
+                        <p class="qstns">Need assistance? Give us a call.
+                            <a href="tel:++015982694756" class="link"><br>+01 598 269 4756</a>
+                        </p>
+                    </div>
                 </div>
                 <div class="social-links">
-                    <h4 class="footer-heading">Мы в соц. сетях</h4>
-                    <div class="socials">
-                        <a href="#" class="socials"> <img src="./gallery/Vector.png" alt="instagram"></a>
-                        <a href="#" class="socials"> <img src="./gallery/Vector1.png" alt="telegram"></a>
-                        <a href="#" class="socials"> <img src="./gallery/Vector2.png" alt="viber">
-                        </a>
+                    <p class="footer-head">We’re here for you</p>
+                    <div class="dates">
+                        <p class="days">Monday - Thursday: 9:30 - 18:00</p>
+                        <p class="days">Friday: 9:30 - 15:00</p>
                     </div>
-
+                    <div class="socials">
+                        <a href="#" class="socials"> <img src="./gallery/facebook.png" alt="facebook"></a>
+                        <a href="#" class="socials"> <img src="./gallery/instagram.png" alt="instagram"></a>
+                        <a href="#" class="socials"> <img src="./gallery/pinterest.png" alt="pinterest"></a>
+                        <a href="#" class="socials"> <img src="./gallery/twitter.png" alt="twitter"></a>
+                    </div>
                 </div>
             </div>
+
         </div>
+
     </footer>
 
 </body>
