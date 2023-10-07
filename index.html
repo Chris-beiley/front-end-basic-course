@@ -13,18 +13,32 @@
     <header class="header">
         <div class="container">
             <nav class="navigation">
-                <div class="logo">
-                    <a href="#"><img src="./gallery/Logo.jpg" alt="logo" class="logotipe"></a>
+                <div class="first-section">
+                    <div class="logo-wrap">
+                        <a href="#"><img src="./gallery/Logo.jpg" alt="logo" class="logotipe"></a>
+                        <div class="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                     <div class="upper-menu">
-                        <p class="lang">УК</p>
-                        <p class="lang">PУ</p>
-                        <p class="lang en">EN</p>
+
+                        <input type="radio" id="uk" name="language" value="ukrainian" class="radio">
+                        <label for="uk" class="lang">УК</label>
+                        <input type="radio" id="ru" name="language" value="russian" class="radio">
+                        <label for="ru" class="lang">PУ</label>
+                        <input type="radio" id="en" name="language" value="english" class="radio">
+                        <label for="en" class="lang">EN</label>
+
+
                         <span class="dots"></span>
                         <p class="address">Kyiv, Mechnikova str, 14/1</p>
                         <span class="dots"></span>
                         <a href="tel:0800211927" class="tel">0800 211 927</a>
                         <span class="dots"></span>
-                        <a href="#" class="socials"> <img src="./gallery/Facebook-Header.png" alt="facebook"></a>
+                        <a href="#" class="social-header"> <img src="./gallery/Facebook-Header.svg" alt="facebook"></a>
+
                     </div>
                     <div class="lower-menu">
                         <a href="#" class="link">about us</a>
@@ -56,7 +70,7 @@
                                 <p class="name">Alexander Alexandrovsky</p>
                                 <p class="position">Managing partner</p>
                             </div>
-                            <button type="submit" class="btn"><img src="./gallery/More.jpg" alt="more"></button>
+                            <a href="#" class="btn"><img src="./gallery/More.svg" alt="more"></a>
                         </div>
                     </article>
                     <article class="card">
@@ -66,7 +80,7 @@
                                 <p class="name">Евгений Патриков</p>
                                 <p class="position">Equity partner, Attorney-at-law</p>
                             </div>
-                            <button type="submit" class="btn"><img src="./gallery/More.jpg" alt="more"></button>
+                            <a href="#" class="btn"><img src="./gallery/More.svg" alt="more"></a>
                         </div>
                     </article>
                     <article class="card">
@@ -76,7 +90,7 @@
                                 <p class="name">Vladislav Melnik</p>
                                 <p class="position">Associate</p>
                             </div>
-                            <button type="submit" class="btn"><img src="./gallery/More.jpg" alt="more"></button>
+                            <a href="#" class="btn"><img src="./gallery/More.svg" alt="more"></a>
                         </div>
                     </article>
                     <article class="card">
@@ -86,7 +100,7 @@
                                 <p class="name">Sergey Binn</p>
                                 <p class="position">Associate</p>
                             </div>
-                            <button type="submit" class="btn"><img src="./gallery/More.jpg" alt="more"></button>
+                            <a href="#" class="btn"><img src="./gallery/More.svg" alt="more"></a>
                         </div>
                     </article>
                     <article class="card">
@@ -96,7 +110,7 @@
                                 <p class="name">Oksana Kobzar</p>
                                 <p class="position">Equity partner, Attorney-at-law</p>
                             </div>
-                            <button type="submit" class="btn"><img src="./gallery/More.jpg" alt="more"></button>
+                            <a href="#" class="btn"><img src="./gallery/More.svg" alt="more"></a>
                         </div>
                     </article>
                     <article class="card">
@@ -106,7 +120,7 @@
                                 <p class="name">Julia Wolk</p>
                                 <p class="position">Associate, Attorney-at-law</p>
                             </div>
-                            <button type="submit" class="btn"><img src="./gallery/More.jpg" alt="more"></button>
+                            <a href="#" class="btn"><img src="./gallery/More.svg" alt="more"></a>
                         </div>
                     </article>
                 </div>
@@ -115,23 +129,24 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="first-footer">
-                <p class="footer-address">Kyiv, Mechnikova str, 14/1</p>
-                <span class="dots"></span>
-                <a href="#" class="map">On map</a>
-            </div>
-            <div class="second-footer">
-                <a href="#" class="socials"> <img src="./gallery/Facebook-Footer.png" alt="facebook"></a>
-                <span class="dots"></span>
-                <a href="tel:0800211927" class="tel">0800 211 927</a>
-                <span class="dots"></span>
-                <a href="mailto:contact@forstudy.space" class="link">contact@forstudy.space</a>
-            </div>
-            <div class="origin">
-                <p class="copy">© 2021 HLEGAL Law company, LLC</p>
+            <div class="footer-wrap">
+                <div class="first-footer">
+                    <p class="footer-address">Kyiv, Mechnikova str, 14/1</p>
+                    <span class="dots"></span>
+                    <a href="#" class="map">On map</a>
+                </div>
+                <div class="second-footer">
+                    <a href="#" class="social-footer"> <img src="./gallery/Facebook-Footer.svg" alt="facebook"></a>
+                    <span class="dots footer"></span>
+                    <a href="tel:0800211927" class="tel">0800 211 927</a>
+                    <span class="dots footer"></span>
+                    <a href="mailto:contact@forstudy.space" class="link">contact@forstudy.space</a>
+                </div>
+                <div class="origin">
+                    <p class="copy">© 2021 HLEGAL Law company, LLC</p>
+                </div>
             </div>
         </div>
-
     </footer>
 
 </body>
