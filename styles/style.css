@@ -59,9 +59,14 @@ html {
   display: none;
 }
 
-.tel {
+.tel-nav {
   color: var(--grey-text, #b3b3ba);
   text-align: right;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tel {
   font-weight: 700;
   text-decoration: none;
 }
@@ -249,7 +254,7 @@ html {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .container {
     max-width: 648px;
   }
@@ -313,14 +318,22 @@ html {
 
 @media (max-width: 450px) {
   .container {
-    max-width: 345px;
+    max-width: 315px;
+  }
+
+  .first-section {
+    width: 375px;
+    height: auto;
   }
 
   .upper-menu {
     background-color: #f5f5fa;
-    width: 345px;
-    max-width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .tel-nav {
+    margin-left: 142px;
   }
 
   .navigation {
@@ -328,11 +341,6 @@ html {
     padding-bottom: 0px;
   }
 
-  .tel {
-    color: #b3b3ba;
-    display: flex;
-    align-items: flex-end;
-  }
   .logotipe {
     display: flex;
     padding: 15px 0px 10px 0px;
@@ -418,8 +426,5 @@ html {
   .first-footer {
     display: flex;
     flex-direction: column;
-  }
-  .tel {
-    margin-left: 174px;
   }
 }
