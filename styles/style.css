@@ -132,6 +132,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
+  line-height: 36.57px;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -154,8 +155,8 @@ html {
   color: var(--Accent, #f0145a);
 }
 
-.btn:hover {
-  color: var(--Accent, #f0145a) !important;
+svg:hover path {
+  stroke: var(--Accent, #f0145a) !important;
 }
 
 .card-wrap {
@@ -182,7 +183,6 @@ html {
   border: none;
   cursor: pointer;
   appearance: none;
-  background-color: inherit;
   float: right;
   margin-top: -50px;
   position: inherit;
@@ -246,27 +246,20 @@ html {
     max-width: 1080px;
   }
 
-  .sample-img {
-    max-width: 400px;
-  }
   .card {
     border-radius: 12px;
   }
 }
 
-@media (max-width: 700px) {
-  .container {
-    max-width: 648px;
-  }
+@media (max-width: 800px) {
   .card-wrap {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .first-section {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
-    grid-gap: 10px;
     justify-items: start;
   }
 
@@ -282,9 +275,16 @@ html {
     margin-top: 30px;
   }
 
-  .card {
-    max-width: 294px;
+  .sample-img {
+    object-fit: cover;
+    height: 400px;
     border-radius: 12px;
+  }
+
+  .card {
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .footer-wrap {
@@ -311,27 +311,17 @@ html {
     position: inherit;
     margin-top: 30px;
   }
-  .card {
-    border-radius: 12px;
-  }
 }
 
 @media (max-width: 450px) {
-  .container {
-    max-width: 315px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .first-section {
-    width: 375px;
-    height: auto;
-  }
-
-  .upper-menu {
+  .header .upper-menu {
     background-color: #f5f5fa;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    padding: 10px 40px;
+    margin-left: -20px;
+    margin-right: -20px;
   }
 
   .tel-nav {
@@ -390,18 +380,16 @@ html {
   }
   .card-wrap {
     grid-template-columns: 100%;
+    padding-bottom: 30px;
   }
 
   .title {
     max-width: 375px;
-  }
-
-  .card {
-    max-width: 294px;
+    padding-top: 30px;
+    margin-bottom: 30px;
   }
 
   .sample-img {
-    max-width: 294px;
     border-radius: 12px;
   }
 
@@ -417,10 +405,12 @@ html {
   .title-section {
     margin-top: -80px;
   }
+  .card {
+    max-width: 315px;
+  }
 
   .sample-img {
     object-fit: cover;
-    max-width: 315px;
     height: 300px;
   }
 
