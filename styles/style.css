@@ -319,6 +319,8 @@ html {
 @media (max-width: 450px) {
   .container {
     max-width: 315px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .first-section {
