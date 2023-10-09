@@ -251,7 +251,7 @@ svg:hover path {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 992px) {
   .card-wrap {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -418,5 +418,29 @@ svg:hover path {
   .first-footer {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 395px) {
+  .header .upper-menu {
+    background-color: #f5f5fa;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 30px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header .upper-menu {
+    background-color: #f5f5fa;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 15px;
+    margin-left: -20px;
+    margin-right: -20px;
   }
 }
