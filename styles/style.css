@@ -313,7 +313,7 @@ svg:hover path {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 400px) {
   .header .upper-menu {
     background-color: #f5f5fa;
     display: flex;
@@ -354,6 +354,7 @@ svg:hover path {
     height: 30px;
     position: relative;
     margin-left: auto;
+    display: inherit;
   }
 
   .burger span {
