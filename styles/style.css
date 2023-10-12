@@ -218,6 +218,10 @@ svg:hover path {
     margin-right: -20px;
   }
 
+  .first-section {
+    padding: 0px;
+  }
+
   .tel-nav {
     margin-left: 142px;
   }
