@@ -1,0 +1,49 @@
+.footer {
+  background-color: #f5f5fa;
+  padding-top: 30px;
+}
+
+.footer-address {
+  color: #323264;
+}
+
+.map {
+  color: #24a3ff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.first-footer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 21px;
+}
+
+.second-footer {
+  display: flex;
+  align-items: center;
+}
+
+.social-header,
+.socila-footer {
+  display: block;
+}
+
+.copy {
+  text-align: right;
+  position: relative;
+  bottom: 100px;
+}
+
+.tel {
+  color: #46466e;
+  text-align: right;
+  font-weight: 700;
+}
+
+.colour:hover {
+  color: var(--Accent, #f0145a);
+}
