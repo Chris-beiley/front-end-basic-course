@@ -37,7 +37,8 @@ html {
   position: relative;
 }
 
-.dots {
+.dots,
+.dots-footer {
   display: inline-block;
   height: 6px;
   width: 6px;
@@ -100,6 +101,7 @@ svg:hover path {
   text-transform: uppercase;
   display: inline-block;
   text-decoration: none;
+  margin-left: 5px;
 }
 
 .hover:hover {
@@ -122,6 +124,7 @@ svg:hover path {
   padding: 30px;
   width: 100%;
   max-width: 650px;
+  border-radius: 12px;
 }
 
 .address-wrap {
@@ -283,14 +286,20 @@ input::-webkit-inner-spin-button {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
+  .first-section {
+    padding: 0px 40px;
+  }
+}
+
+@media (max-width: 500px) {
   .header .upper-menu {
     background-color: #f5f5fa;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 10px 40px;
-    margin-left: -20px;
+    margin-left: -17px;
     margin-right: -20px;
   }
 
@@ -327,7 +336,7 @@ input::-webkit-inner-spin-button {
     width: 30px;
     height: 30px;
     position: relative;
-    margin-left: auto;
+    margin-left: 35px;
     display: inherit;
   }
 
@@ -416,7 +425,7 @@ input::-webkit-inner-spin-button {
 
   .logo-wrap {
     display: flex;
-    gap: 150px;
+    gap: 170px;
   }
 
   .burger {
@@ -482,7 +491,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px 15px;
+    padding: 10px 23px;
     margin-left: -20px;
     margin-right: -20px;
   }
@@ -569,5 +578,15 @@ input::-webkit-inner-spin-button {
   .sections {
     padding: 25px;
     margin-top: -40px;
+  }
+}
+
+@media (max-width: 370px) {
+  .header .upper-menu {
+    padding: 10px 17px;
+  }
+
+  .sections {
+    padding: 15px;
   }
 }

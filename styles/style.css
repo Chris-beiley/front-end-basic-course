@@ -36,7 +36,8 @@ html {
   position: relative;
 }
 
-.dots {
+.dots,
+.dots-footer {
   display: inline-block;
   height: 6px;
   width: 6px;
@@ -207,7 +208,7 @@ svg:hover path {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .header .upper-menu {
     background-color: #f5f5fa;
     display: flex;
@@ -244,7 +245,7 @@ svg:hover path {
 
   .logo-wrap {
     display: flex;
-    gap: 150px;
+    gap: 170px;
   }
 
   .burger {
@@ -338,7 +339,7 @@ svg:hover path {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px 15px;
+    padding: 10px 23px;
     margin-left: -20px;
     margin-right: -20px;
   }
