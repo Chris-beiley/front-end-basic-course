@@ -78,6 +78,10 @@ html {
 
 .link {
   color: var(--active-regular, #24a3ff);
+}
+
+.nav {
+  color: var(--active-regular, #24a3ff);
   font-size: 16px;
 }
 
