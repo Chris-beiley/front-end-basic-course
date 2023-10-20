@@ -76,8 +76,7 @@ html {
 /* ---------------------------------------------- */
 
 .title {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px;
   color: var(--Accent, #f0145a);
   font-size: 38px;
   font-weight: 700;
@@ -88,7 +87,7 @@ html {
   display: flex;
   gap: 60px;
   flex-wrap: wrap;
-  padding-bottom: 60px;
+  padding: 60px 60px;
 }
 
 .service {
@@ -212,6 +211,21 @@ html {
 }
 
 /* ----------------------------------------- */
+
+@media (max-width: 1920px) {
+  .partners-logo {
+    max-width: 1720px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    padding-bottom: 60px;
+  }
+
+  .service {
+    width: 100%;
+    max-width: 493px;
+  }
+}
 
 @media (max-width: 1024px) {
   .section {

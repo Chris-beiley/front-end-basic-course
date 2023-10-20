@@ -6,64 +6,289 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/homepage.css">
     <link rel="fonts" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="../assets/bootstrap5.0.2/css/bootstrap.min.css">
     <title>Adaptive</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <nav class="navigation">
-                <div class="first-section">
-                    <div class="logo-wrap">
-                        <a href="./homepage.html"><img src="../gallery/Logo-contacts.jpg" alt="logo"
-                                class="logotipe"></a>
-                        <div class="burger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+    <div class="gradient">
+        <header class="header">
+            <div class="container">
+                <nav class="navigation">
+                    <div class="first-section">
+                        <div class="logo-wrap">
+                            <a href="./homepage.html"><img src="../gallery/Logo-home.svg" alt="logo"
+                                    class="logotipe"></a>
+                            <div class="burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="upper-menu">
+                            <input type="radio" id="uk" name="language" value="ukrainian" class="radio">
+                            <label for="uk" class="lang">УК</label>
+                            <input type="radio" id="ru" name="language" value="russian" class="radio">
+                            <label for="ru" class="lang">PУ</label>
+                            <input type="radio" id="en" name="language" value="english" class="radio">
+                            <label for="en" class="lang localization">EN</label>
+                            <span class="dots"></span>
+                            <p class="address top dark">Kyiv, Mechnikova str, 14/1</p>
+                            <span class="dots"></span>
+                            <a href="tel:0800211927" class="tel-nav dark">0800 211 927</a>
+                            <span class="dots"></span>
+                            <a href="https://en-gb.facebook.com/" class="social-header"> <img
+                                    src="../gallery/Facebook-Header.svg" alt="facebook"></a>
+
+                        </div>
+                        <div class="lower-menu">
+                            <a href="../pages/about.html" class="link navg">about us</a>
+                            <a href="../pages/services.html" class="link navg">services</a>
+                            <a href="../index.html" class="link navg">team</a>
+                            <a href="#" class="link navg">publications</a>
+                            <a href="../pages/contact.html" class="link navg">contact</a>
                         </div>
                     </div>
-                    <div class="upper-menu">
-
-                        <input type="radio" id="uk" name="language" value="ukrainian" class="radio">
-                        <label for="uk" class="lang">УК</label>
-                        <input type="radio" id="ru" name="language" value="russian" class="radio">
-                        <label for="ru" class="lang">PУ</label>
-                        <input type="radio" id="en" name="language" value="english" class="radio">
-                        <label for="en" class="lang localization">EN</label>
-
-
-                        <span class="dots"></span>
-                        <p class="address top">Kyiv, Mechnikova str, 14/1</p>
-                        <span class="dots"></span>
-                        <a href="tel:0800211927" class="tel-nav">0800 211 927</a>
-                        <span class="dots"></span>
-                        <a href="https://en-gb.facebook.com/" class="social-header"> <img
-                                src="../gallery/Facebook-Header.svg" alt="facebook"></a>
-
-                    </div>
-                    <div class="lower-menu">
-                        <a href="../pages/about.html" class="link nav">about us</a>
-                        <a href="../pages/services.html" class="link nav">services</a>
-                        <a href="../index.html" class="link nav">team</a>
-                        <a href="#" class="link nav">publications</a>
-                        <a href="../pages/contact.html" class="link nav">contact</a>
-                    </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
+        </header>
+        <div class="main-section">
+            <div class="container">
+                <div></div>
+                <h1 class="head">you legal solutions provider</h1>
+                <button class="round"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"
+                        fill="none">
+                        <g clip-path="url(#clip0_22728_11339)">
+                            <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2" />
+                            <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_22728_11339">
+                                <rect width="42" height="42" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg></button>
+            </div>
         </div>
-    </header>
-    <main>
-        <section>
-            <div class="section">
-                <div class="container">
+        <section class="second-section">
+            <div class="container">
+                <div class="menu">
+                    <div class="wrapper nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                            aria-selected="true">Consistent</button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">Customer oriented</button>
+                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                            aria-selected="false">Innovative</button>
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">Business oriented</button>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <h2 class="title-inside">We turn the idea of legal services</h2>
+                            <p class="text-inside">Consolidating many years of experience and practice, the company's
+                                lawyers accompany complex projects and achieve a number of important decisions for the
+                                industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">Customer oriented...</div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">Innovative...</div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                            aria-labelledby="v-pills-settings-tab">Business oriented...</div>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <div class="third-section">
+            <div class="container">
+                <h1 class="title">What can we do better than others?</h1>
+                <div class="article-wrap">
+                    <article class="service">
+                        <img src="../gallery/card1.jpg" alt="card" class="img" width="92" height="92">
+                        <div class="content-wrap">
+                            <h3 class="card-title">IT and e-commerce</h3>
+                            <p class="content">An endless stream of contracts, tax issues, labor relations, corporate
+                                papers - legal work distracts you from doing business. But there is not much work to do
+                                to hire an in-house lawyer.</p>
+                        </div>
+                    </article>
+                    <article class="service">
+                        <img src="../gallery/card2.jpg" alt="card" class="img" width="92" height="92">
+                        <div class="content-wrap">
+                            <h3 class="card-title">Comprehensive daily
+                                legal support</h3>
+                            <p class="content">In addition, over time, the work will become the same type and
+                                uninteresting for a full-time lawyer. And we know very well how difficult it is to find
+                                a good candidate with experience in the field of information technology in Ukraine.</p>
+                        </div>
+                    </article>
+                    <article class="service">
+                        <img src="../gallery/card3.jpg" alt="card" class="img" width="92" height="92">
+                        <div class="content-wrap">
+                            <h3 class="card-title">Structuring corporate relationships</h3>
+                            <p class="content">Instead of just providing legal services, we will hire a lawyer or a
+                                whole team that will fit into the daily life of your company.</p>
+                        </div>
+                    </article>
+                    <article class="service">
+                        <img src="../gallery/card4.jpg" alt="card" class="img" width="92" height="92">
+                        <div class="content-wrap">
+                            <h3 class="card-title">Building contractual relations</h3>
+                            <p class="content">Once a week, or week after month, you have your own lawyer by your side.
+                                Anyone in the company can catch it at the coffee maker and just talk about current
+                                affairs instead of waiting for update status.</p>
+                        </div>
+                    </article>
+                    <article class="service">
+                        <img src="../gallery/card5.jpg" alt="card" class="img" width="92" height="92">
+                        <div class="content-wrap">
+                            <h3 class="card-title">Protection of business, intellectual propertys</h3>
+                            <p class="content">And all the other time he will work on new diverse projects, so he will
+                                definitely not stop in professional development. One way or another, all Axon Partners
+                                will work for you instead of a corporate lawyer.</p>
+                        </div>
+                    </article>
+                    <article class="service">
+                        <img src="../gallery/card6.jpg" alt="card" class="img" width="92" height="92">
+                        <div class="content-wrap">
+                            <h3 class="card-title">Judicial representation</h3>
+                            <p class="content">Is it a small, medium-sized company or a market leader? Local business or
+                                multinational company? Do you have your own legal department or not?</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-one"></div>
+    <div class="page-two"></div>
+    <main>
+        <section class="partners">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <article class="slider w-100"><img class=" photo" src="../gallery/Photo6.jpg" alt="First slide">
+                            <div class="inside-wrap">
+                                <a href="../index.html" class="team">команда<img src="../gallery/Vector2.svg"
+                                        alt="vector" class="vector"></a>
+                                <h2 class="slider-head">Ми звикли брати на себе відповідальність та завжди гарантуємо
+                                    чесну,
+                                    вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                <p class="name">Олександр Олександровський</p>
+                                <p class="position">Керуючий партнер</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article class="slider w-100"><img class=" photo" src="../gallery/Photo1.jpg" alt="First slide">
+                            <div class="inside-wrap">
+                                <a href="../index.html" class="team">команда<img src="../gallery/Vector2.svg"
+                                        alt="vector" class="vector"></a>
+                                <h2 class="slider-head">Ми звикли брати на себе відповідальність та завжди гарантуємо
+                                    чесну,
+                                    вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                <p class="name">Юлія Вовк</p>
+                                <p class="position">Юрист</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article class="slider w-100"><img class=" photo" src="../gallery/Photo2.jpg" alt="First slide">
+                            <div class="inside-wrap">
+                                <a href="../index.html" class="team">команда<img src="../gallery/Vector2.svg"
+                                        alt="vector" class="vector"></a>
+                                <h2 class="slider-head">Ми звикли брати на себе відповідальність та завжди гарантуємо
+                                    чесну,
+                                    вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                <p class="name">Оксана Кобзар</p>
+                                <p class="position">Відповідаюча за якість</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <h3 class="title-second">They already trust us</h3>
+            <div class="partners-logo">
+                <div class="item hex"><img src="../gallery/Hillel-Logo-OneLine-White-Uk.svg" alt="hillel">
+                </div>
+                <div class="item hax"><img src="../gallery/wanna-bizz.svg" alt="partners" class="logos"></div>
+                <div class="item orng"><img src="../gallery/tapgerine.svg" alt="partners" class="logos"></div>
+                <div class="item lavander"><img src="../gallery/3dlook.svg" alt="partners" class="logos"></div>
+                <div class="item orng"><img src="../gallery/orangeir.svg" alt="partners" class="logos"></div>
+                <div class="item gray"><img src="../gallery/adteligent.svg" alt="partners" class="logos"></div>
+                <div class="item red"><img src="../gallery/clicky.svg" alt="partners" class="logos"></div>
+                <div class="item blue"><img src="../gallery/ecolease.svg" alt="partners" class="logos"></div>
+                <div class="item beige"><img src="../gallery/infatek.svg" alt="partners" class="logos"> </div>
+                <div class="item purple"><img src="../gallery/siti-park.svg" alt="partners" class="logos"></div>
+                <div class="item green"><img src="../gallery/art-print.svg" alt="partners" class="logos"></div>
+                <div class="item black"><img src="../gallery/ultimate.svg" alt="partners" class="logos"></div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
             <div class="footer-wrap">
+                <div class="wrap-wrap">
+                    <a href="#" class="team">Publications<img src="../gallery/Vector2.svg" alt="vector"
+                            class="vector"></a>
+                    <h2 class="footer-title">We have something to tell</h2>
+                </div>
+                <div class="publ">
+                    <article class="publ-card first">
+                        <img src="../gallery/Cover1.jpg" alt="cover" class="publ-img">
+                        <div class="pupl-wrap">
+                            <a href="#" class="publ-name">Equity associate</a>
+                            <p class="date">April 22</p>
+                            <hr class="sprt">
+                            <p class="publ-txt">I'm a jun on projects. I am a co-owner of a law firm. How it happened.
+                                Before entering my parents told me that if I…</p>
+                        </div>
+                    </article>
+                    <article class="publ-card second">
+                        <img src="../gallery/Cover2.jpg" alt="cover" class="publ-img">
+                        <div class="pupl-wrap">
+                            <a href="#" class="publ-name">Penalty for the Good Corporation: what will happen to Google
+                                and
+                                others for violating the GDPR</a>
+                            <p class="date">September 29</p>
+                            <hr class="sprt">
+                            <p class="publ-txt">And why the recovery of 50 million euros could be a fateful precedent
+                                According to Mind.ua January 21 National Commission for Data Protection.</p>
+                        </div>
+                    </article>
+                    <article class="publ-card third">
+                        <img src="../gallery/Cover3.jpg" alt="cover" class="publ-img">
+                        <div class="pupl-wrap">
+                            <a href="#" class="publ-name">Millennial Testament</a>
+                            <p class="date">August 19</p>
+                            <hr class="sprt">
+                            <p class="publ-txt">What and how modern vloggers, opinion leaders and crypto-millionaires
+                                will inherit A typical legacy of the Ukrainian generation X looks like this: an
+                                apartment in…</p>
+                        </div>
+                    </article>
+                </div>
+                <hr class="sprtr">
                 <div class="first-footer">
                     <p class="footer-address">Kyiv, Mechnikova str, 14/1</p>
                     <span class="dots"></span>
@@ -87,6 +312,7 @@
             </div>
         </div>
     </footer>
+    <script src="../assets/bootstrap5.0.2/js/bootstrap.min.js"></script>
 
 </body>
 
