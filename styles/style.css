@@ -38,28 +38,6 @@
   line-height: 100px;
 }
 
-.card.second {
-  position: absolute;
-  right: 330px;
-}
-.card.third {
-  position: absolute;
-  right: 215px;
-}
-.card.fourth {
-  position: absolute;
-  right: 100px;
-}
-
-.card.last {
-  position: absolute;
-  right: 1px;
-}
-.card.three {
-  position: absolute;
-  right: 200px;
-}
-
 .ml {
   margin-left: 1rem;
 }
