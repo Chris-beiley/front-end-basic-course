@@ -17,6 +17,7 @@
 }
 .clearfix {
   overflow: auto;
+  position: relative;
 }
 
 .card {
@@ -38,20 +39,29 @@
 }
 
 .card.second {
-  position: relative;
-  right: 400px;
+  position: absolute;
+  right: 330px;
 }
 .card.third {
-  position: relative;
-  right: 80px;
+  position: absolute;
+  right: 215px;
 }
 .card.fourth {
   position: absolute;
-  right: 5px;
+  right: 100px;
 }
 .card.fifth {
-  position: relative;
-  left: 330px;
+  position: absolute;
+  left: 1px;
+}
+
+.card.last {
+  position: absolute;
+  right: 1px;
+}
+.card.three {
+  position: absolute;
+  right: 200px;
 }
 
 .ml {
@@ -59,6 +69,10 @@
 }
 .mr {
   margin-right: 1rem;
+}
+
+.mt {
+  margin-top: 50px;
 }
 .float-left {
   float: left;
