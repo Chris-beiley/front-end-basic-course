@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/contact.css">
     <link rel="fonts" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="../assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <title>Adaptive</title>
 </head>
 
@@ -15,7 +17,7 @@
             <nav class="navigation">
                 <div class="first-section">
                     <div class="logo-wrap">
-                        <a href="../pages/homepage.html"><img src="../gallery/Logo-contacts.jpg" alt="logo"
+                        <a href="../pages/homepage.html"><img src="../gallery/Logo-about.jpg" alt="logo"
                                 class="logotipe"></a>
                         <div class="burger">
                             <span></span>
@@ -57,42 +59,68 @@
         <section>
             <div class="section">
                 <div class="container">
-                    <div class="sections">
-                        <div class="address-wrap">
-                            <p class="address-new">Kyiv,<br> Mechnikova str, 14</p>
-                            <hr class="line">
-                            <a href="tel:0800211927" class="tel lose">0800 211 927</a>
-                            <a href="mailto:contact@forstudy.space"
-                                class="link next lose colour">contact@forstudy.space</a>
-                            <hr class="line">
-                            <a href="https://en-gb.facebook.com/" class="facebook"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"
-                                    fill="none">
-                                    <path
-                                        d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
-                                        fill="#24A3FF" />
-                                </svg><span class="hover"> page <br> on facebook</span></a>
-                        </div>
-
-                        <div class="support">
-                            <h2 class="heading">We would like to help you</h2>
-                            <form action="https://fom.in.ua/echo" method="post">
-                                <input id="name" type="text" name="name" placeholder="Name">
-                                <input id="message" type="text" name="message" placeholder="Message">
-                                <h3 class="answer">How to answer you?</h3>
-                                <input id="phone" type="number" name="number" placeholder="Phone number">
-                                <input id="E-mail" type="email" name="email" placeholder="Email">
-                                <button type="submit" class="button">Send message</button>
-                            </form>
-                        </div>
+                    <div class="upper-section">
+                        <h2 class="title">We turn over the idea of legal services</h2>
+                        <article class="first-card">
+                            <p class="txt">Consolidating many years of experience and practice, the company's lawyers
+                                accompany complex projects and achieve the adoption of a number of decisions that are
+                                important for the industry. Many people form the practice of applying the law of the sea
+                                in
+                                Ukraine.
+                                HLEGAL is a reliable business partner, confirmed by stable cooperation with
+                                international
+                                law firms, the trust of large Ukrainian and international companies, and the recognition
+                                of
+                                professional ratings.</p>
+                            <div class="statistic">
+                                <hr>
+                                <div class="numbers"><span><img src="../gallery/flag.svg" alt="flag">10+</span>
+                                    <p class="stat-txt">years of relevant experience</p>
+                                </div>
+                                <div class="numbers"><span><img src="../gallery/case-about.svg" alt="case">30+</span>
+                                    <p class="stat-txt">active clients who entrust us with their orders on a monthly
+                                        basis
+                                    </p>
+                                </div>
+                                <div class="numbers"><span><img src="../gallery/star-about.svg" alt="star">500+</span>
+                                    <p class="stat-txt">hours of pro bono work annually</p>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
+            </div>
+            <div class="container"></div>
+            <div class="middle-section">
+                <p class="team-txt">Team</p>
+            </div>
+            <div class="container"></div>
+            <div class="lowest-section">
+                <article class="first-card">
+                    <p class="txt">The historically unchanged legal profession has begun to reformat in recent years.
+                        Clients are feeling this, but law firms are still resisting evolution. Clients need convenience,
+                        simplicity, transparent payment. Google, IBM WatsOn, Symantec Clearwell prove that the
+                        technological revolution in legal services has begun and is imminent.
+                        Quality is what we care about the most.
+                        It's simple. If you are unhappy with our work, we will refund your money. We trust our clients.
+                        And we want our clients to trust us too.</p>
+                    <h2 class="title-second">Quality is what we care about the most.</h2>
+                </article>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
             <div class="footer-wrap">
+                <div class="extra-footer">
+                    <h4 class="achvm-title">achievements</h4>
+                    <div class="owl-carousel owl-theme">
+                        <div> <img src="../gallery/achivment1.jpg" alt="achivment" width="300"> </div>
+                        <div> <img src="../gallery/achivment2.jpg" alt="achivment" width="300"> </div>
+                        <div> <img src="../gallery/achivment3.jpg" alt="achivment" width="300"> </div>
+                        <div> <img src="../gallery/achivment4.jpg" alt="achivment" width="300"> </div>
+                    </div>
+                </div>
                 <div class="first-footer">
                     <p class="footer-address">Kyiv, Mechnikova str, 14/1</p>
                     <span class="dots"></span>
@@ -116,7 +144,8 @@
             </div>
         </div>
     </footer>
-
+    <script src="../assets/jquary/jquery-3.7.1.js"></script>
+    <script src="../assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 </body>
 
 </html>

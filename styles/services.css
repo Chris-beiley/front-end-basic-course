@@ -87,7 +87,7 @@ html {
   display: flex;
   gap: 60px;
   flex-wrap: wrap;
-  padding: 60px 60px;
+  padding: 60px 0px;
 }
 
 .service {
@@ -224,6 +224,10 @@ html {
   .service {
     width: 100%;
     max-width: 493px;
+  }
+
+  .container {
+    max-width: 1650px;
   }
 }
 

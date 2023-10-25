@@ -6,7 +6,6 @@
 .first-section {
   display: grid;
   grid-template-columns: auto auto;
-  padding: 0px 60px;
 }
 
 .radio {
