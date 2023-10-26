@@ -118,6 +118,8 @@ svg:hover rect {
 
 .second-section .tab-content {
   border-left: 4px solid rgb(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
   margin-left: 60px;
   padding-left: 60px;
 }
@@ -152,7 +154,6 @@ button {
   color: var(--basic-white, #fff);
   font-size: 30px;
   font-weight: 700;
-  padding-top: 60px;
   padding-bottom: 30px;
 }
 
@@ -228,6 +229,10 @@ button {
   padding: 60px;
 }
 
+.w-40 {
+  width: 23%;
+}
+
 .photo {
   height: 400px;
   object-fit: cover;
@@ -236,7 +241,13 @@ button {
 .inside-wrap {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  align-items: flex-start;
+}
+
+.absolute {
+  position: absolute !important;
+  left: 460px !important;
+  top: 30px;
 }
 
 .slider {
@@ -252,6 +263,10 @@ button {
   text-transform: uppercase;
   font-size: 14px;
   text-decoration: none;
+}
+
+.carousel-inner {
+  margin-bottom: 30px;
 }
 
 .team:hover {
@@ -271,11 +286,22 @@ button {
   -webkit-text-fill-color: transparent;
 }
 
+.slider-head {
+  text-align: left;
+}
+
+.btn {
+  background-color: #24a3ff !important;
+  border-radius: 50% !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
 .name {
   color: var(--grey-text, #b3b3ba);
   font-size: 16px;
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 5px;
 }
 
@@ -291,8 +317,7 @@ button {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding: 30px 0px;
 }
 
 .partners-logo {
@@ -534,6 +559,16 @@ button {
     padding: 0px;
   }
 
+  .w-40 {
+    width: 100%;
+    height: 528px;
+    object-fit: cover;
+  }
+
+  .title-inside {
+    padding-top: 60px;
+  }
+
   .second-section .nav-pills {
     flex-direction: row !important;
     flex-wrap: nowrap;
@@ -547,7 +582,7 @@ button {
   }
 
   .slider {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
   }
 
@@ -566,9 +601,17 @@ button {
     flex: 0 0 100%;
     max-width: 95%;
   }
-}
 
-@media (max-width: 600px) {
+  .carousel-item {
+    height: 900px;
+  }
+
+  .absolute {
+    position: relative !important;
+    left: 0 !important;
+    top: 0;
+    padding: 30px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -694,6 +737,10 @@ button {
   .carousel {
     padding: 30px;
   }
+
+  .slider-head {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 395px) {
@@ -801,7 +848,7 @@ button {
     justify-content: flex-start;
     align-items: center;
     padding: 10px 23px;
-    margin-left: -20px;
+    margin-left: -21px;
     margin-right: -20px;
   }
   .first-section {
