@@ -26,11 +26,11 @@
                         </div>
                         <div class="upper-menu">
                             <input type="radio" id="uk" name="language" value="ukrainian" class="radio">
-                            <label for="uk" class="lang">УК</label>
+                            <label for="uk" class="lang m-t">УК</label>
                             <input type="radio" id="ru" name="language" value="russian" class="radio">
-                            <label for="ru" class="lang">PУ</label>
+                            <label for="ru" class="lang m-t">PУ</label>
                             <input type="radio" id="en" name="language" value="english" class="radio">
-                            <label for="en" class="lang localization">EN</label>
+                            <label for="en" class="lang m-t localization">EN</label>
                             <span class="dots dark-gb"></span>
                             <p class="address top dark">Kyiv, Mechnikova str, 14/1</p>
                             <span class="dots dark-gb"></span>
@@ -53,7 +53,7 @@
         <div class="section">
             <div class="container">
                 <div class="main-section">
-                    <img src="../gallery/card1.jpg" alt="card" width="64" class="case">
+                    <img src="../gallery/card1.jpg" alt="card" width="92" class="case">
                     <h1 class="title">IT and e-commerce</h1>
                     <p class="txt">An endless stream of contracts, tax issues, labor relations, corporate papers - legal
                         work distracts you from doing business. But there is not much work to do to hire an in-house
@@ -69,23 +69,23 @@
                     <div class="pop-up">
                         <input type="checkbox" id="click">
                         <label for="click" class="click-me">Free consultation</label>
-                        <div class="content">
-                            <div class="text">
-                                LOGIN
+                        <div class="overlay">
+                            <div class="content" id="content">
+                                <div class="text">
+                                    We would like to help you
+                                </div>
+                                <label for="click" id="temp">x</label>
+
+                                <form action="https://fom.in.ua/echo" method="post">
+                                    <input id="name" type="text" name="name" placeholder="Name">
+                                    <input id="message" type="text" name="message" placeholder="Message">
+                                    <h3 class="answer">How to answer you?</h3>
+                                    <input id="phone" type="number" name="number" placeholder="Phone number">
+                                    <input id="E-mail" type="email" name="email" placeholder="Email">
+                                    <button type="submit" class="button">Send message</button>
+
+                                </form>
                             </div>
-                            <label for="click" id="temp">x</label>
-
-                            <form>
-
-                                <label for="username">Name</label>
-                                <input type="text" placeholder="Name" id="username">
-
-                                <label for="password">Password</label>
-                                <input type="password" placeholder="Password" id="password">
-
-                                <button>Log In</button>
-
-                            </form>
                         </div>
                     </div>
                 </div>
