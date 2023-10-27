@@ -111,10 +111,6 @@ svg:hover path {
 svg:hover circle {
   stroke: var(--Accent, #f0145a) !important;
 }
-/* 
-svg:hover clipPath {
-  stroke: var(--Accent, #f0145a) !important;
-} */
 
 .second-section .tab-content {
   border-left: 4px solid rgb(255, 255, 255, 0.4);
@@ -457,6 +453,18 @@ button {
   .service {
     width: 100%;
     max-width: 493px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .w-40 {
+    width: 35%;
+  }
+
+  .absolute {
+    position: absolute !important;
+    left: 491px !important;
+    top: -10px;
   }
 }
 
