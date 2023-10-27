@@ -111,10 +111,10 @@ svg:hover path {
 svg:hover circle {
   stroke: var(--Accent, #f0145a) !important;
 }
-
-svg:hover rect {
+/* 
+svg:hover clipPath {
   stroke: var(--Accent, #f0145a) !important;
-}
+} */
 
 .second-section .tab-content {
   border-left: 4px solid rgb(255, 255, 255, 0.4);
