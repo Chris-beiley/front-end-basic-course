@@ -34,8 +34,9 @@
 
 .copy {
   text-align: right;
+  color: #b3b3ba;
   position: relative;
-  bottom: 100px;
+  top: 20px;
 }
 
 .tel {

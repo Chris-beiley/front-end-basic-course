@@ -33,12 +33,17 @@
 .dark {
   color: var(--active-regular, #ffffff);
 }
+
 .burger {
   display: none;
 }
 
 .link:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid;
+}
+
+.dark:hover {
+  color: #f0145a;
 }
 
 .upper-menu {
@@ -66,13 +71,13 @@
 }
 
 .lang:hover {
-  background: var(--Accent, #f0145a);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
   padding: 5px 7px;
   border-radius: 8px;
   cursor: pointer;
 }
 
-svg:hover path {
+.social-header:hover svg path {
   fill: var(--Accent, #f0145a) !important;
 }

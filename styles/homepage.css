@@ -28,12 +28,16 @@ html {
 
 .container {
   width: 100%;
-  max-width: calc(var(--container-width) + var(--basic-space) * 2);
+  max-width: calc(var(--container-width) + var(--basic-space) * 2) !important;
   padding-left: var(--basic-space);
   padding-right: var(--basic-space);
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}
+
+.container-small {
+  max-width: 1360px;
 }
 
 .dots,
@@ -84,6 +88,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 2;
 }
 
 .main-section .container {
@@ -105,10 +110,10 @@ html {
   background-color: transparent;
 }
 
-svg:hover path {
+.round:hover svg path {
   stroke: var(--Accent, #f0145a) !important;
 }
-svg:hover circle {
+.round:hover svg circle {
   stroke: var(--Accent, #f0145a) !important;
 }
 
@@ -158,6 +163,12 @@ button {
   color: var(--basic-white, #fff);
   font-size: 19px;
   line-height: 30px;
+  text-align: left;
+}
+
+.nav-pills .nav-link {
+  white-space: nowrap;
+  text-align: right;
 }
 
 /* --------------------------------------------------- */
@@ -226,28 +237,40 @@ button {
 }
 
 .w-40 {
-  width: 23%;
+  width: 30%;
+  object-fit: cover;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: none !important;
 }
 
 .photo {
   height: 400px;
   object-fit: cover;
+  border-radius: 12px 12px 0px 0px;
 }
 
 .inside-wrap {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
-.absolute {
-  position: absolute !important;
-  left: 460px !important;
-  top: 30px;
+.carousel-capt {
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding: 30px;
 }
 
 .slider {
-  display: flex;
+  display: flex !important;
   background-color: #f5f5fa;
   border-radius: 24px;
 }
@@ -259,6 +282,9 @@ button {
   text-transform: uppercase;
   font-size: 14px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
 .carousel-inner {
@@ -267,6 +293,10 @@ button {
 
 .team:hover {
   color: var(--Accent, #f0145a);
+}
+
+.team:hover svg path {
+  stroke: var(--Accent, #f0145a);
 }
 
 .slider-head,
@@ -321,6 +351,11 @@ button {
   grid-template-columns: repeat(4, 1fr);
   max-width: 1700px;
   border-radius: 0px 12px;
+  overflow: hidden;
+  margin-bottom: 60px;
+  max-width: 1720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .item {
@@ -385,6 +420,8 @@ button {
   background-color: #ffff;
   width: 100%;
   max-width: 513px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .publ {
@@ -429,11 +466,17 @@ button {
   font-size: 14px;
   line-height: 22px;
   margin: 0;
+  color: #000000;
 }
 
 .sprtr {
   background: #e6e6f0;
   height: 2px !important;
+  border: none;
+}
+
+p {
+  margin-bottom: 0 !important;
 }
 
 /* ----------------------------------------- */
@@ -459,12 +502,7 @@ button {
 @media (max-width: 1500px) {
   .w-40 {
     width: 35%;
-  }
-
-  .absolute {
-    position: absolute !important;
-    left: 491px !important;
-    top: -10px;
+    object-fit: cover;
   }
 }
 
@@ -495,8 +533,14 @@ button {
   .second-section .tab-content {
     border-top: 4px solid rgb(255, 255, 255, 0.4) !important;
     width: 100%;
-    margin: 60px 0px;
+    margin: 30px 0px;
     border-left: none;
+    padding: 0px 15px;
+  }
+
+  .container-small {
+    max-width: 315px;
+    text-align: center;
   }
 }
 
@@ -505,7 +549,6 @@ button {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
-    justify-items: start;
     padding: 0px;
   }
 
@@ -574,7 +617,7 @@ button {
   }
 
   .title-inside {
-    padding-top: 60px;
+    padding-top: 30px;
   }
 
   .second-section .nav-pills {
@@ -614,11 +657,8 @@ button {
     height: 900px;
   }
 
-  .absolute {
-    position: relative !important;
-    left: 0 !important;
-    top: 0;
-    padding: 30px;
+  .nav-link {
+    font-size: 30px;
   }
 }
 
@@ -626,9 +666,9 @@ button {
   .header .upper-menu {
     background-color: rgba(245, 245, 250, 0.2);
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
+    padding: 10px 15px;
     margin-left: -17px;
     margin-right: -20px;
   }
@@ -660,6 +700,7 @@ button {
   .logo-wrap {
     display: flex;
     gap: 150px;
+    justify-content: space-between;
   }
 
   .burger {
@@ -695,7 +736,6 @@ button {
   .title {
     max-width: 375px;
     padding-top: 30px;
-    margin-bottom: 30px;
   }
 
   .social-header {
@@ -714,7 +754,7 @@ button {
   }
 
   .third-section {
-    padding: 30px;
+    padding: 30px 15px;
     margin-top: -100px;
   }
 
@@ -725,7 +765,8 @@ button {
   .partners-logo {
     display: grid;
     grid-template-columns: 100%;
-    border-radius: 0px 12px;
+    max-height: calc(120px * 6);
+    overflow-y: auto;
   }
   .main-section {
     height: initial;
@@ -823,8 +864,7 @@ button {
 
   .title {
     max-width: 375px;
-    padding-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 10px;
   }
 
   .social-header {
@@ -920,8 +960,7 @@ button {
 
   .title {
     max-width: 375px;
-    padding-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 10px;
   }
 
   .social-header {

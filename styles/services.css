@@ -76,7 +76,7 @@ html {
 /* ---------------------------------------------- */
 
 .title {
-  padding: 60px;
+  padding: 60px 0px;
   color: var(--Accent, #f0145a);
   font-size: 38px;
   font-weight: 700;
@@ -84,15 +84,14 @@ html {
 }
 
 .article-wrap {
-  display: flex;
-  gap: 54px;
-  flex-wrap: wrap;
-  padding: 60px 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 60px;
+  gap: 60px;
 }
 
 .service {
   width: 100%;
-  max-width: 400px;
 }
 
 .card-title {
@@ -153,8 +152,11 @@ html {
 .partners-logo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  max-width: 1700px;
   border-radius: 0px 12px;
+  overflow: hidden;
+  max-width: 1720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .item {
@@ -236,8 +238,7 @@ html {
 
 @media (max-width: 1024px) {
   .section {
-    padding: 60px;
-    margin-top: -125px;
+    margin-top: -68px;
   }
   .support,
   .address-wrap {
@@ -297,12 +298,14 @@ html {
     margin-top: 30px;
   }
 
-  .service {
-    max-width: 260px;
+  .article-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 45px 60px;
   }
 
-  .article-wrap {
-    padding-bottom: 0px;
+  .title {
+    padding: 60px 45px;
   }
 }
 
@@ -318,7 +321,7 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px 40px;
+    padding: 10px 15px;
     margin-left: -17px;
     margin-right: -20px;
   }
@@ -385,7 +388,6 @@ html {
   .title {
     max-width: 375px;
     padding-top: 30px;
-    margin-bottom: 30px;
   }
 
   .social-header {
@@ -403,11 +405,6 @@ html {
     flex-direction: column;
   }
 
-  .section {
-    padding: 30px;
-    margin-top: -100px;
-  }
-
   .article-wrap {
     gap: 30px;
   }
@@ -416,6 +413,14 @@ html {
     display: grid;
     grid-template-columns: 100%;
     border-radius: 0px 12px;
+    max-height: calc(120px * 6);
+    overflow-y: auto;
+  }
+
+  .article-wrap {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 0px 15px 60px;
   }
 }
 
@@ -491,8 +496,7 @@ html {
 
   .title {
     max-width: 375px;
-    padding: 30px 0px;
-    margin-bottom: 30px;
+    padding: 30px 5px;
   }
 
   .social-header {
