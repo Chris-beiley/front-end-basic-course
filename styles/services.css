@@ -405,10 +405,6 @@ html {
     flex-direction: column;
   }
 
-  .article-wrap {
-    gap: 30px;
-  }
-
   .partners-logo {
     display: grid;
     grid-template-columns: 100%;
@@ -421,6 +417,7 @@ html {
     display: grid;
     grid-template-columns: 100%;
     padding: 0px 15px 60px;
+    gap: 30px;
   }
 }
 
